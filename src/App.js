@@ -6,7 +6,6 @@ import { data } from './components/data'
 import './styles/App.css';
 
 function App() {
-  console.log(data)
   return (
     <div className="App">
       <Header content="Which Pepe are you today?" />

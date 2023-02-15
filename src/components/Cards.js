@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "./Card";
+import PepeCard from "./PepeCard";
 
 const Cards = (props) => {
     return (
         <section className="cards">
-            {props.content.map((card) => <Card key={card.id} content={card}/>)}
+            {props.content.map((card) => <PepeCard key={card.id} content={card}/>)}
         </section>
     )
 }
