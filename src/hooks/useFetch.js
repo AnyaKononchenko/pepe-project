@@ -4,10 +4,10 @@ const useFetch = (url) => {
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
-
+   
     useEffect(() => {
         const abortController = new AbortController();
-
+        console.log(url);
         setTimeout(() => {
             fetch(url, { signal: abortController.signal })
                 .then(res => {
@@ -17,7 +17,7 @@ const useFetch = (url) => {
                     return res.json();
                 })
                 .then(data => {
-                    // console.log(data);
+                    console.log(data);
                     setIsPending(false);
                     setData(data);
                     setError(null);

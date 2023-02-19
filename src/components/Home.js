@@ -6,11 +6,12 @@ import RandomPepe from "./RandomPepe";
 import load from "../logos/loading.gif";
 
 const Home = () => {
-    const { data: pepeCards, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json/pepes');
+    const { data: pepeCards, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json');
+    // const { data: pepeCards, error, isPending } = useFetch('https://jsonkeeper.com/b/ZP2Y/pepes');
     const [randomPepe, setRandomPepe] = useState(null);
 
     const handleClick = (e) => {
-        const recordsLength = pepeCards.length;
+        const recordsLength = pepeCards.pepes.length;
         const guessNumber = getRandomInt(recordsLength);
         setRandomPepe(guessNumber);
     }
