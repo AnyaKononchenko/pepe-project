@@ -4,7 +4,7 @@ import CardsList from "./CardsList";
 import load from "../logos/loading.gif"
 
 const Gallery = () => {
-    const { data, error, isPending } = useFetch('http://localhost:8000/pepes')
+    const { data, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json/pepes')
 
     return (
         <section className="gallery">

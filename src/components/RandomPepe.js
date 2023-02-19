@@ -5,7 +5,7 @@ import Loading from "./Loading";
 import load from "../logos/logoForRandom.gif";
 
 const RandomPepe = ({ id }) => {
-    const { data: pepe, error, isPending } = useFetch(`http://localhost:8000/pepes/${id}`);
+    const { data: pepe, error, isPending } = useFetch(`https://pepe-db.netlify.app/database.json/pepes${id}`);
 
     return (
         <article className="random-pepe">

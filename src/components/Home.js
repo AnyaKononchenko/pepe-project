@@ -6,7 +6,7 @@ import RandomPepe from "./RandomPepe";
 import load from "../logos/loading.gif";
 
 const Home = () => {
-    const { data: pepeCards, error, isPending } = useFetch('http://localhost:8000/pepes')
+    const { data: pepeCards, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json/pepes');
     const [randomPepe, setRandomPepe] = useState(null);
 
     const handleClick = (e) => {
