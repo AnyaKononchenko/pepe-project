@@ -1,19 +1,28 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Cards from './components/Cards';
 
-import { data } from './components/data'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './styles/App.css';
+import Home from './components/Home';
+import NotFound from './components/NotFound';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
-    <div className="App">
-      <Header content="Which Pepe are you today?" />
-      <main>
-        <Cards content={data}/>
-      </main>
-      <Footer content="Stay Pepe" />
-    </div>
+    <Router>
+      <div className="content">
+        <Header />
+        <main>
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/gallery' element={<Gallery />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
