@@ -1,6 +1,4 @@
 import PepeCard from "./PepeCard";
-// import {data} from "./data";
-
 
 const CardsList = (props) => {
     const cards = props.cards.map((card) => 
