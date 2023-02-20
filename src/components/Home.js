@@ -7,7 +7,6 @@ import load from "../logos/loading.gif";
 
 const Home = () => {
     const { data: pepeCards, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json');
-    // const { data: pepeCards, error, isPending } = useFetch('https://jsonkeeper.com/b/ZP2Y/pepes');
     const [randomPepe, setRandomPepe] = useState(null);
 
     const handleClick = (e) => {
