@@ -15,7 +15,6 @@ function App() {
   return (
     <Router>
       <div className="content">
-      {console.log("page width", width)}
         <Header changeWidth={width}/>
         <main>
           <Routes>

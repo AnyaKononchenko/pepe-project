@@ -1,7 +1,7 @@
-import Menu from "./Menu";
 import { useState } from "react";
+import Menu from "./Menu";
 
-const BurgerMenu = () => {
+export const BurgerMenu = () => {
     const [display, setDisplay] = useState('hidden');
     const [isClicked, setIsClicked] = useState(false);
 
@@ -24,7 +24,7 @@ const BurgerMenu = () => {
                 <div className="burger__element"></div>
             </div>
             <div className={`burger-menu__content ${display}`}>
-                <Menu />
+                <Menu/>
             </div>
         </div>
     );

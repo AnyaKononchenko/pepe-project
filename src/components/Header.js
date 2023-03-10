@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../logos/pepeLogo.png";
-import BurgerMenu from "./BurgerMenu";
 import Menu from "./Menu";
+import BurgerMenu from "./BurgerMenu";
 
 const Header = ({changeWidth}) => {
 

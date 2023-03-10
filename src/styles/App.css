@@ -228,7 +228,7 @@ button:hover {
 }
 
 .random-pepe {
-  width: 35w;
+  max-width: 35vw;
   min-height: auto;
   text-align: center;
   margin-bottom: .5rem;
@@ -241,6 +241,11 @@ button:hover {
   text-align: center;
   margin-bottom: .5rem;
 }
+
+.gallery .card .card__description{
+  display: none;
+}
+
 
 /* footer */
 

@@ -9,7 +9,7 @@ const Home = () => {
     const { data: pepeCards, error, isPending } = useFetch('https://pepe-db.netlify.app/database.json');
     const [randomPepe, setRandomPepe] = useState(null);
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         const recordsLength = pepeCards.pepes.length;
         const guessNumber = getRandomInt(recordsLength);
         setRandomPepe(guessNumber);
