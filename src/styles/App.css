@@ -228,7 +228,7 @@ button:hover {
 }
 
 .random-pepe {
-  max-width: 35vw;
+  width: 35vw;
   min-height: auto;
   text-align: center;
   margin-bottom: .5rem;
